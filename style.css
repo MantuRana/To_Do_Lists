@@ -92,7 +92,7 @@ position:absolute;
 height: 20px;
 width:20px;
 border-radius: 50%;
-background-image: url(/image/unchecked.png);
+background-image: url(unchecked.png);
 background-size: cover;
 background-position:center ;
 top:12px;
@@ -104,7 +104,7 @@ color:#555;
 text-decoration: line-through;
  }
  ul li.checked::before{
-background-image: url(/image/checked.png);
+background-image: url(checked.png);
 
  }
               /* remove text icon span */
