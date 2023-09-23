@@ -1,0 +1,127 @@
+*{
+margin :0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+box-sizing: border-box;
+
+}
+.container{
+width:100%;
+min-height: 100vh;
+background:linear-gradient(150deg,#bdcb25,#c246e1);
+padding:10px;
+
+}
+.todo-app{
+width:100%;
+height:400px;
+max-width: 540px;
+background: #fff;
+margin:100px auto 20px;
+padding: 0px 10px 0px;
+border-radius: 20px;
+border: 3px solid rgb(232, 227, 96);
+
+
+}
+.todo-app:hover{
+    box-shadow:0px 0px 10px 8px #212021;
+
+}
+
+.todo-app h1{
+color:#002765;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+margin-left: 150px;
+text-shadow: 0px 5px 2px rgb(229, 18, 71);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-decoration: underline;
+
+}
+.todo-app h2 img{
+    width:20px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    padding-left: 20px;
+    margin-bottom: 27px;
+    border-radius: 23px;
+    box-shadow: 0px 0px 10px 1px rgb(12, 15, 16);
+    }
+ input{
+flex:1;
+border:none;
+outline:none;
+background: transparent;
+padding:10px;
+font-weight: 14px;
+
+ }   
+
+ button{
+border: none;
+outline: none;
+padding: 16px 40px;
+background: green;
+color:#fff;
+font-size: 16px;
+cursor: pointer;
+border-radius: 35px;
+ }
+
+ ul li{
+list-style: none;
+font-size: 25px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position: relative;
+color:#3805e0;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-shadow: 0px 2px 2px ;
+ }
+ ul li::before{
+content: '';
+position:absolute;
+height: 20px;
+width:20px;
+border-radius: 50%;
+background-image: url(/image/unchecked.png);
+background-size: cover;
+background-position:center ;
+top:12px;
+left:8px;
+
+ }
+ ul li.checked{
+color:#555;
+text-decoration: line-through;
+ }
+ ul li.checked::before{
+background-image: url(/image/checked.png);
+
+ }
+              /* remove text icon span */
+ ul li span{
+position: absolute;
+right:0;
+top:5px;
+width:40px;
+height:40px;
+font-size: 30px;
+color:red;
+line-height: 40px;
+text-align: center;
+
+ }
+ ul li span:hover{
+    font-size: 50px;
+
+ }
+
